@@ -24,7 +24,7 @@ print(a)
 # variables are written in camelCase
 aNewVariable: int = 5
 
-# constants are written all caps in snake case
+# constants are written all caps in snake_case
 THIS_IS_A_CONSTANT = 3.14
 print(THIS_IS_A_CONSTANT)
 
@@ -103,9 +103,9 @@ print(tmp <= tmp2)
 
 # --Logic Operators--
 
-# and 
+# and  &
 # or |
-# not 
+# not !
 
 # --Membership Operators--
 # checks if element in sequence  in

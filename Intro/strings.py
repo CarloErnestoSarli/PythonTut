@@ -2,6 +2,7 @@
 
 # Raw strings ignore escape sequences
 print(r"I'll be ignored \n")
+print("I'll be ignored \n hello")
  
 # Combine strings with +
 print("Hello " + "You")
@@ -61,7 +62,7 @@ print(f'{int1} + {int2} = {int1 + int2}')
  
 # To lower and upper case
 print("A String".lower())
-print("A String".upper())
+print("A String".upper()) 
  
 # Is letter or number
 print("abc123".isalnum())

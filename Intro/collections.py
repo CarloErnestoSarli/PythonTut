@@ -72,10 +72,11 @@ print("1st 2", t1[0:2])
 print("Every Other ", t1[0:-1:2])
 print("Reverse ", t1[::-1])
 
-# static type list
+# static type tuple
 
 from typing import Tuple
-statTuple: Tuple[str] = ['a', 'b']
+
+statTuple: Tuple[str] = ('a', 'b')
 
 
 # ----DICTIONARIES----
@@ -85,7 +86,8 @@ statTuple: Tuple[str] = ['a', 'b']
 # Duplicate keys aren't allowed
 heroes = {
     "Superman": "Clark Kent",
-    "Batman": "Bruce Wayne"
+    "Batman": "Bruce Wayne",
+    "Spiderman": "Peter Parker"
 }
  
 villains = dict([
@@ -120,7 +122,6 @@ print(heroes.pop("Batman"))
  
 # Search for key
 print("Superman" in heroes)
-
 
 
 # ----SETS----
