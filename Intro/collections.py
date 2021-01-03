@@ -52,9 +52,8 @@ print("Reverse ", l1[::-1])
 
 
 # Static type list 
-from typing import List
 
-statList: List[int] = [1] 
+statList: list[int] = [1] 
 
 # Tuples
 
@@ -74,9 +73,7 @@ print("Reverse ", t1[::-1])
 
 # static type tuple
 
-from typing import Tuple
-
-statTuple: Tuple[str] = ('a', 'b')
+statTuple: tuple[str, str] = ('a', 'b')
 
 
 # ----DICTIONARIES----
