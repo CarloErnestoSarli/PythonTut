@@ -1,12 +1,15 @@
 # ----- LOOPS -----
 # While : Execute while condition is True
-w1 = 1
-while w1 < 5:
+END_LOOP: int = 5
+w1: int = 1
+while w1 < END_LOOP:
     print(w1)
     w1 += 1
- 
-w2 = 0
-while w2 <= 20:
+
+END_LOOP_TWO = 20
+
+w2: int = 0
+while w2 <= END_LOOP_TWO:
     if w2 % 2 == 0:
         print(w2)
     elif w2 == 9:
@@ -24,9 +27,9 @@ l4 = [1, 3.14, "Derek", True]
 while len(l4):
     print(l4.pop(0))
 
-
-i = 1
-while i < 6:
+END_LOOP_THREE: int = 6
+i: int = 1
+while i < END_LOOP_THREE:
   print(i)
   i += 1
 else:
@@ -36,6 +39,7 @@ else:
 # Allows you to perform an action a set number of times
 # Range performs the action 10 times 0 - 9
 # end="" eliminates newline
+
 for x in range(0, 10):
     print(x, ' ', end="")
 print('\n')
@@ -51,12 +55,18 @@ for x in [2, 4, 6]:
     print(x)
  
 # You can double up for loops to cycle through lists
-num_list = [[1, 2, 3], [10, 20, 30], [100, 200, 300]]
+numList: list[list[int]] = [[1, 2, 3], [10, 20, 30], [100, 200, 300]]
+
+for l in numList:
+    for el in l:
+        print(el)
+
+
  
 # ----- ITERATORS -----
 # You can pass an object to iter() which returns
 # an iterator which allows you to cycle
-l5 = [6, 9, 12]
+l5: list[int] = [6, 9, 12]
 itr = iter(l5)
 print(next(itr))  # Grab next value
  
@@ -69,4 +79,4 @@ print(list(range(0, 10, 2)))
  
 for x in range(0, 3):
     for y in range(0, 3):
-        print(num_list[x][y])
+        print(numList[x][y])

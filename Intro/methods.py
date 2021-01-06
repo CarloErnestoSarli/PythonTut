@@ -10,3 +10,54 @@ def say_hello(name: str):
 
 say_hello('Natalia')
 say_hello('Carlo')
+
+def add(a: int, b: int):
+    return a + b
+
+result: int = add(5, 10)
+
+print(result)
+
+
+# talk about all the bad ideas python has when talkin' 'bout functions
+
+# default  value
+
+def real_slim_sikora(name = "Natalia"):
+  print("Hi! My name is" + name)
+
+#declare constant instead
+
+# variable variables key value pairs
+def dog_names(dog2, dog3, dog1):
+  print("Who's a good boi? you are " + dog1)
+
+dog_names(dog1 = "Ule", dog2 = "Idaho", dog3 = "Ossi")
+
+#this just creates confusion really
+
+#unknown number of parameters
+def horrible_children(*kids):
+  print("The most horrible child is " + kids[2])
+
+horrible_children("Emil", "Tobias", "Linus")
+
+# just use a list or figure out what you are doing first ;)
+
+# RECURSION
+
+def recursion(k: int):
+  if(k > 0):
+    print(k)
+    result = k + recursion(k - 1)
+    print(f'{result}')
+  else:
+    result = 0
+  return result
+
+
+recursion(6)
+
+
+# avoid tail recursion infinite loop
+
