@@ -34,7 +34,10 @@ class Bird:
         return self._mAge
 
     def Set_Age(self, age: int) -> None:
-        self._mAge = age
+        if (age < 0):
+            self._mAge = 0
+        else:
+            self._mAge = age
 
     def Get_Weight(self) -> float:
         return self._mWeight
@@ -65,8 +68,8 @@ class Parrot(Bird):
     #         print('I surrender')
     #     else: 
     #         print('Talk')
-    #
-    # this is how overloading would work if python supported it
+    
+    #this is how overloading would work if python supported it
 
     # accessor methods
     def Get_Colour(self) -> str:
@@ -106,3 +109,7 @@ oRobin: Robin = Robin("robin", "jojo", 0.5, 1, 15)
 #polymorphism
 oParrot.Make_Sound()
 oRobin.Make_Sound()
+print(oParrot.Get_Age())
+oParrot.Set_Age(-3)
+print(oParrot.Get_Age())
+
